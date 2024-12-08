@@ -161,11 +161,18 @@
                     margin: 8px;
                 }
             </style>
+            <div style="text-align: center; margin-top: 40px;">
+                <iframe src="https://www.youtube.com/embed/oQ0rRCIXyIU" allowfullscreen 
+        style="width: 90%; max-width: 800px; height: calc(100vw * 0.5625); max-height: 450px; border: none;">
+    </iframe>
+            </div>
             <h3>Abstract</h3>
             <p class="abstract-text">
                 Embedded IoT system development is crucial for enabling seamless connectivity and functionality across a wide range of applications. However, such a complex process requires cross-domain knowledge of hardware and software and hence often necessitates direct developer involvement, making it labor-intensive, time-consuming, and error-prone. To address this challenge, this paper introduces EmbedGenius, the first fully automated software development platform for general-purpose embedded IoT systems. The key idea is to leverage the reasoning ability of Large Language Models (LLMs) and embedded system expertise to automate the hardware-in-the-loop development process. The main methods include a component-aware library resolution method for addressing hardware dependencies, a library knowledge generation method that injects utility domain knowledge into LLMs, and an auto-programming method that ensures successful deployment. We evaluate EmbedGenius's performance across 71 modules and four mainstream embedded development platforms with over 350 IoT tasks. Experimental results show that EmbedGenius can generate codes with an accuracy of 95.7% and complete tasks with a success rate of 86.5%, surpassing human-in-the-loop baselines by 15.6%--37.7% and 25.5%--53.4%, respectively. We also show EmbedGenius’s potential through case studies in environmental monitoring and remote control systems development.
             </p>
-            <img src="Overview.png" class="img-responsive center-block" alt="Overview">
+            <img src="Overview.png" class="img-responsive center-block overview-image" alt="Overview">
+            
+            
         </div>
         
         <hr>
@@ -179,12 +186,12 @@
             <div class="row">
                 <div class="col-md-4 embed-section">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KO4-ST-oldY" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/geCJNCCiSb8" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-4 embed-section">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Cq3OJHGYPk" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-4 embed-section">
@@ -939,7 +946,7 @@
     <div class="example-code">
         <h4>Code with Debug Information</h4>
         <pre><code class="language-cpp">
-#include <DS18B20.h>
+#include &lt;DS18B20.h&gt;
 
 // Define the pin for DS18B20 sensor
 #define ONE_WIRE_BUS 5
