@@ -123,6 +123,44 @@
         <div class="section">
             <h1>EmbedGenius: Towards Automated Software Development for General-Purpose Embedded IoT Systems</h1>
             <p class="author">Anonymous Author</p>
+            <div class="buttons" style="text-align: center;">
+                <a href="#Workflow" class="btn">Workflow</a>
+                <a href="#Demo" class="btn">Demo</a>
+                <a href="#Prompt" class="btn">Prompt</a>
+                <a href="#Example" class="btn">Example Output</a>
+                <a href="#Hardware" class="btn">Supported Hardware</a>
+            </div>
+            <style>
+                .btn {
+                    padding: 8px 16px;
+                    margin: 10px 15px;
+                    background-color: #007BFF;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+        
+                .btn:hover {
+                    background-color: #0056b3;
+                    transform: scale(1);
+                }
+        
+                .btn:active {
+                    background-color: #004085;
+                }
+        
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+        
+                .buttons .btn {
+                    margin: 8px;
+                }
+            </style>
             <h3>Abstract</h3>
             <p class="abstract-text">
                 Embedded IoT system development is crucial for enabling seamless connectivity and functionality across a wide range of applications. However, such a complex process requires cross-domain knowledge of hardware and software and hence often necessitates direct developer involvement, making it labor-intensive, time-consuming, and error-prone. To address this challenge, this paper introduces EmbedGenius, the first fully automated software development platform for general-purpose embedded IoT systems. The key idea is to leverage the reasoning ability of Large Language Models (LLMs) and embedded system expertise to automate the hardware-in-the-loop development process. The main methods include a component-aware library resolution method for addressing hardware dependencies, a library knowledge generation method that injects utility domain knowledge into LLMs, and an auto-programming method that ensures successful deployment. We evaluate EmbedGenius's performance across 71 modules and four mainstream embedded development platforms with over 350 IoT tasks. Experimental results show that EmbedGenius can generate codes with an accuracy of 95.7% and complete tasks with a success rate of 86.5%, surpassing human-in-the-loop baselines by 15.6%--37.7% and 25.5%--53.4%, respectively. We also show EmbedGenius’s potential through case studies in environmental monitoring and remote control systems development.
@@ -132,13 +170,16 @@
         
         <hr>
         
-        <div class="section"> <h3>Workflow / How to Use EmbedGenius</h3> <p>EmbedGenius automates the entire embedded development process, from setup to final code flashing. Follow these simple steps:</p> <p><img src="WORK_FLOW.png" alt="Workflow Diagram" style="width:100%; max-width:1200px; display:block; margin:auto;"></p> <p><strong>Step 1: Prepare Your Hardware</strong><br>Ensure that your embedded device (e.g., Arduino board) is ready and properly set up.</p> <p><strong>Step 2: Connect Your Device to Your Laptop</strong><br>Use the appropriate cable to link your embedded device to your laptop.</p> <p><strong>Step 3: Open the EmbedGenius App</strong><br>Launch the EmbedGenius application on your laptop. Enter the task description and relevant metadata, specifying the functionality and requirements of your project. Once you're ready, press the "Start" button to begin the automation process.</p> <p><strong>Step 4: Automate the Development Process</strong><br>EmbedGenius will automatically generate the code, resolve library dependencies, perform logic checks, and handle hardware interfacing. Once everything is ready, it will compile the code and flash it directly to your embedded device, ensuring everything works as expected.</p> <p><strong>Step 5: Enjoy Your Fully Developed System</strong><br>With the code successfully flashed, your system is now ready to use—enjoy your fully developed embedded solution!</p> </div>        
+        <div class="section"> <h3 id="Workflow">Workflow / How to Use EmbedGenius</h3> <p>EmbedGenius automates the entire embedded development process, from setup to final code flashing. Follow these simple steps:</p> <p><img src="WORK_FLOW.png" alt="Workflow Diagram" style="width:100%; max-width:1200px; display:block; margin:auto;"></p> <p><strong>Step 1: Prepare Your Hardware</strong><br>Ensure that your embedded device (e.g., Arduino board) is ready and properly set up.</p> <p><strong>Step 2: Connect Your Device to Your Laptop</strong><br>Use the appropriate cable to link your embedded device to your laptop.</p> <p><strong>Step 3: Open the EmbedGenius App</strong><br>Launch the EmbedGenius application on your laptop. Enter the task description and relevant metadata, specifying the functionality and requirements of your project. Once you're ready, press the "Start" button to begin the automation process.</p> <p><strong>Step 4: Automate the Development Process</strong><br>EmbedGenius will automatically generate the code, resolve library dependencies, perform logic checks, and handle hardware interfacing. Once everything is ready, it will compile the code and flash it directly to your embedded device, ensuring everything works as expected.</p> <p><strong>Step 5: Enjoy Your Fully Developed System</strong><br>With the code successfully flashed, your system is now ready to use—enjoy your fully developed embedded solution!</p> </div>        
+        
+        <hr>
+
         <div class="section">
             <h3 id="Demo">Demo</h3>
             <div class="row">
                 <div class="col-md-4 embed-section">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=KO4-ST-oldY" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-4 embed-section">
@@ -531,6 +572,8 @@
             </style>
         </div>
         
+        <hr>
+
         <!-- Appendix B - Example Output -->
 <div class="section">
     <h3 id="Example">Appendix B - Example Output</h3>
@@ -982,6 +1025,7 @@ void loop() {
     </style>
 </div>
 
+<hr>
 
         <div class="section">
             <h3 id="Hardware">Appendix C - Supported Hardware Modules</h3>
